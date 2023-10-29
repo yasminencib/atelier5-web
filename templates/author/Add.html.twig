@@ -1,0 +1,18 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Author</title>
+    <link rel="stylesheet" href="{{ asset('styles.css') }}">
+</head>
+<body>
+    <h1>Add Author</h1>
+    {{ form_start(f, {'attr': {'class': 'form-container'}}) }}
+        {{ form_row(f.username, {'attr': {'class': 'form-input'}}) }}
+        {{ form_row(f.email, {'attr': {'class': 'form-input'}}) }}
+        {{ form_row(f.Ajouter, {'attr': {'class': 'form-button'}}) }}
+    {{ form_end(f) }}
+</body>
+</html>

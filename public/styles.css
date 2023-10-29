@@ -1,0 +1,67 @@
+/* styles.css */
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.form-input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.form-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+}
+/* styles.css */
+
+/* Style pour le titre h1 */
+h1 {
+    text-align: center;
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+}
+
+/* Style pour la table */
+table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style pour les cellules d'en-tête */
+th {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Style pour les cellules de données */
+td {
+    padding: 10px;
+}
+
+/* Style pour les liens "Edit" et "Delete" */
+a {
+    text-decoration: none;
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Style au survol des liens */
+a:hover {
+    background-color: #0056b3;
+}

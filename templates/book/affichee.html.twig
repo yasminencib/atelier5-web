@@ -1,0 +1,56 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Book</title>
+    <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
+</head>
+<body>
+    <h1>List Books</h1>
+    <table border="1">
+        <tr>
+            <th>ref</th> 
+        <th>Title</th>
+
+        <th>Publication date</th>
+        <th>published</th>
+        <th>category</th>
+
+        <th>author</th>
+        <th>Actions</th>
+        </tr>
+
+        {% for b in publishedBooks %}
+            <tr>
+                <td>{{ b.ref }}</td>
+                <td>{{ b.title }}</td>
+                <td>{{ b.publicationDate | date('M-d-Y') }}</td>
+                <td> {{b.published }}</td>
+                <td> {{b.category }}</td>
+                <td>{{ b.author.username }}</td>
+              <td>  le nembre de livre pub :{{numPublishedBooks}}</td>
+              </td>  le nembre non pub :{{numUnPublishedBooks}}</td>
+                <td><a href="{{ path('app_deleteBook', {id:b.id}) }}">Delete</a></td>
+                <td><a href="{{ path('app_editbook', {'id': b.id}) }}">Edit</a></td>
+            </tr>
+        {% endfor %}
+    </table>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Livres par Titre{% endblock %}
+
+{% block body %}
+    <h1>Livres par Titre</h1>
+    
+    <p>Voici les livres correspondant au titre : {{ title }}</p>
+    
+    {% if books is not empty %}
+        <ul>
+            {% for book in books %}
+                <li>{{ book.title }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>Aucun livre trouvé pour ce titre.</p>
+    {% endif %}
+    
+  
+{% endblock %}
+
